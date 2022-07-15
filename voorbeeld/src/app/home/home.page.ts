@@ -14,14 +14,14 @@ export class HomePage {
   verticalFabPosition = "bottom";
 
   constructor(private alertController: AlertController) {
-    for(let i = 0; i<50; i++){
-      this.taskList.push(new Task({
-        name: 'Task ' + i,
-        done: this.id % 2 === 0,
-        id: this.id
-      }));
-      this.id++;
-    }
+    // for(let i = 0; i<50; i++){
+    //   this.taskList.push(new Task({
+    //     name: 'Task ' + i,
+    //     done: this.id % 2 === 0,
+    //     id: this.id
+    //   }));
+    //   this.id++;
+    // }
     //we maken een vluchtige lijst van taken aan omdat we nog niet met een API/persistente storage werken
     //elke taak met een even id wordt als afgewerkt gemarkeerd
 
@@ -38,42 +38,42 @@ export class HomePage {
     task.done = !task.done
   }
 
-  async presentAlert(): Promise<void>{
-    //see the documentation for more info about each attribute.
-    //https://ionicframework.com/docs/api/alert
-    const alert = await this.alertController.create({
-      header: 'New Task',
-      buttons: [
-        {
-          text: 'Cancel',
-          role: 'cancel',
-          cssClass: 'secondary'
-        }, {
-          text: 'OK',
-          handler: (inputs) => {
-            this.newTask(inputs.name);
-          }
-        }
-      ],
-      inputs: [
-        {
-          name: 'name',
-          type: 'text',
-          placeholder: 'Task Description'
-        }
-      ]
-    });
+//   async presentAlert(): Promise<void>{
+//     //see the documentation for more info about each attribute.
+//     //https://ionicframework.com/docs/api/alert
+//     const alert = await this.alertController.create({
+//       header: 'New Task',
+//       buttons: [
+//         {
+//           text: 'Cancel',
+//           role: 'cancel',
+//           cssClass: 'secondary'
+//         }, {
+//           text: 'OK',
+//           handler: (inputs) => {
+//             this.newTask(inputs.name);
+//           }
+//         }
+//       ],
+//       inputs: [
+//         {
+//           name: 'name',
+//           type: 'text',
+//           placeholder: 'Task Description'
+//         }
+//       ]
+//     });
 
-    await alert.present();
-  }
+//     await alert.present();
+//   }
 
-  newTask(name: string): void{
-    this.taskList.push({
-      name,
-      id: this.id,
-      done: false
-    });
-    this.id++;
-  }
+//   newTask(name: string): void{
+//     this.taskList.push({
+//       name,
+//       id: this.id,
+//       done: false
+//     });
+//     this.id++;
+//   }
   
 }

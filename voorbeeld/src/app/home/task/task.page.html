@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>New Task</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="checkmark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+
+    <ion-item lines="full">
+        <ion-label position="floating">Task name</ion-label>
+        <ion-input type="text" class="ion-margin-top"
+          [(ngModel)]="taskName"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+        <ion-label position="floating">Description</ion-label>
+        <ion-textarea cols="20" rows="4" [autoGrow]="true"
+          [(ngModel)]="description">
+        </ion-textarea>
+    </ion-item>
+
+    <ion-item lines="none">
+        <ion-label>Deadline</ion-label>
+    </ion-item>
+
+    <div class="ion-align-items-center">
+        <!--
+        More info about the datetime picker can be found in the official docs.
+        https://ionicframework.com/docs/api/datetime
+        Please note that the datetime picker was completely rewritten for
+        Ionic V6 and any old examples are thus obsolete.
+        -->
+        <ion-datetime firstDayOfWeek="1" [yearValues]="yearValues" presentation="date"
+          [(ngModel)]="deadline">
+        </ion-datetime>
+    </div>
+
+</ion-content>

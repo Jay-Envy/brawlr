@@ -30,7 +30,7 @@
   </ion-list>
 
   <ion-fab [vertical]="verticalFabPosition" horizontal="end" slot="fixed">
-    <ion-fab-button (click)="presentAlert()">
+    <ion-fab-button [routerLink]="['task']">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>
