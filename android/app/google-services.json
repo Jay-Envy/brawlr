@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "47786037720",
+    "project_id": "brawlr-313f3",
+    "storage_bucket": "brawlr-313f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47786037720:android:df2845fb0758bfe33022ad",
+        "android_client_info": {
+          "package_name": "com.vermeulen.jelle.brawlr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47786037720-urn1c09iko7nrd8gdkavau818bg66clt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vermeulen.jelle.brawlr",
+            "certificate_hash": "be5493096f7f15d947c0daae8214710759c35ee2"
+          }
+        },
+        {
+          "client_id": "47786037720-oc2aicbtvvri3rnu3b00fg5mobrrit6v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDU8GrR712NuN232i6F07x-FYdmazuYbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47786037720-oc2aicbtvvri3rnu3b00fg5mobrrit6v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
