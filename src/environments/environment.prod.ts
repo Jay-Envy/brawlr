@@ -1,22 +1,12 @@
 export const environment = {
   production: true,
-
-  firebaseConfig : {
-
-  apiKey: 'AIzaSyC7Yp278tRZVcVY53mPoKV1oXijWOZZirU',
-
-  authDomain: 'brawlr-313f3.firebaseapp.com',
-
-  projectId: 'brawlr-313f3',
-
-  storageBucket: 'brawlr-313f3.appspot.com',
-
-  messagingSenderId: '47786037720',
-
-  appId: '1:47786037720:web:002dda36de28887b3022ad',
-
-  measurementId: 'G-PXTS0KT5SM'
-
-}
+  firebaseConfig: {
+    apiKey: 'AIzaSyBLaWAZmpdoNPIktTsF0OTmp6tlRI6-HaA',
+    authDomain: 'brawlr-b1cf5.firebaseapp.com',
+    projectId: 'brawlr-b1cf5',
+    storageBucket: 'brawlr-b1cf5.appspot.com',
+    messagingSenderId: '682551882463',
+    appId: '1:682551882463:web:c2fe286c0a2e94a00d2f6a'
+  }
 };
 

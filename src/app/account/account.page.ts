@@ -6,6 +6,7 @@ import { AppComponent } from '../app.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { RouteReuseStrategy } from '@angular/router';
 import { IonicRouteStrategy } from '@ionic/angular';
+import { CamService } from '../services/cam.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,6 +28,6 @@ bootstrap: [AppComponent],
 })
 export class AccountPage {
 
-  constructor() {}
+  constructor(public camService: CamService) {}
 
 }
