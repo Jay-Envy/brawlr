@@ -1,0 +1,6 @@
+{
+	"appId": "com.brawlr.app",
+	"appName": "brawlr",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
