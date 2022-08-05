@@ -1,4 +1,4 @@
-package com.vermeulen.jelle.brawlr;
+package com.brawlr.app;
 
 import com.getcapacitor.BridgeActivity;
 

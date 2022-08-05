@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.vermeulen.jelle.brawlr',
+  appId: 'com.brawlr.app',
   appName: 'brawlr',
   webDir: 'www',
   bundledWebRuntime: false

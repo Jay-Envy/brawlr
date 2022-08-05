@@ -2,13 +2,13 @@
 # Accountpage
 * Aanmelden met Firebase
 * in accountpage zijn ook instellingen te vinden
-** username?
-** martial arts dicipline
-** foto maken
-** bio
+* * username?
+* * martial arts dicipline
+* * foto maken
+* * bio
 
-** distance
-** set visible
+* * distance
+* * set visible
 
 ## Brawlpage
 * Loading icon voor card geladen wordt

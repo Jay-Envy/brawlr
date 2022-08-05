@@ -1,17 +1,9 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        debug {
-            storeFile file('C:\\Users\\Jay-Envy\\.android\\brawlr.jks')
-            keyAlias 'brawlr'
-            storePassword 'brawlr'
-            keyPassword 'brawlr'
-        }
-    }
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.vermeulen.jelle.brawlr"
+        applicationId "com.brawlr.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -27,11 +19,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-          signingConfig signingConfigs.debug
         }
-      debug {
-        signingConfig signingConfigs.debug
-      }
     }
 }
 

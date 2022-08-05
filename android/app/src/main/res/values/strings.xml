@@ -2,6 +2,6 @@
 <resources>
     <string name="app_name">brawlr</string>
     <string name="title_activity_main">brawlr</string>
-    <string name="package_name">com.vermeulen.jelle.brawlr</string>
-    <string name="custom_url_scheme">com.vermeulen.jelle.brawlr</string>
+    <string name="package_name">com.brawlr.app</string>
+    <string name="custom_url_scheme">com.brawlr.app</string>
 </resources>
