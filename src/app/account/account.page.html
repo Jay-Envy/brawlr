@@ -17,20 +17,20 @@
         Profile pic (avatar)
       </ion-label>
       <ion-avatar slot="start">
-        <!-- <img [src]="authService.getProfilePic()"> -->
+        <img [src]="authService.getProfilePic()">
       </ion-avatar>
       <ion-label>
-        <!-- <ion-list-header>{{authService.getDisplayName()}}</ion-list-header>
+        <ion-list-header>{{authService.getDisplayName()}}</ion-list-header>
         <ion-note *ngIf="authService.getEmail()"
-                  class="ion-margin-start">{{authService.getEmail()}}</ion-note> -->
+                  class="ion-margin-start">{{authService.getEmail()}}</ion-note>
       </ion-label>
     </ion-item>
 
-    <!-- <ion-list *ngIf="authService.isLoggedIn()" lines="none">
+    <ion-list *ngIf="authService.isLoggedIn()" lines="none">
       <ion-item (click)="authService.signOut()">
         Logout
       </ion-item>
-    </ion-list> -->
+    </ion-list>
     <ion-button [routerLink]="['app-brawlr-card']">
       <ion-icon name='skull'></ion-icon>
     </ion-button>
