@@ -1,0 +1,7 @@
+{
+  "name": "brawlr-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
