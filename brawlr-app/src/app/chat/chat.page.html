@@ -1,4 +1,4 @@
-<!-- <ion-header [translucent]="true">
+<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
       Chat
@@ -22,7 +22,7 @@
         </ion-item-option>
       </ion-item-options>
   
-      <ion-item *ngFor="let user of userService.userChatList" (click)="router.navigate(['privatemessage', user.id], {relativeTo: activatedRoute})">
+      <ion-item (click)="router.navigate(['privatemessage', user.id], {relativeTo: activatedRoute})">
         <img class="chat-img" src="{{user.pic}}"/>
         <ion-label>
           {{user.name}}
@@ -31,4 +31,4 @@
   
     </ion-item-sliding>
   </ion-list>
-</ion-content> -->
+</ion-content>

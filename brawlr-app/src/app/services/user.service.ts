@@ -6,8 +6,8 @@ import { User } from 'src/datatypes/user';
 })
 export class UserService {
 
-  private userList: User[] = [];
-  private userChatList: User[] = [];
+  userList: User[] = [];
+  userChatList: User[] = [];
   private id = 0;
 
   constructor() { }

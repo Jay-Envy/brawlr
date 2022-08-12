@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Camera, CameraResultType, CameraSource, PermissionStatus, Photo} from '@capacitor/camera';
 import {Directory, Filesystem, ReaddirResult} from '@capacitor/filesystem';
-import {Storage} from '@capacitor/storage';
+import {Preferences} from '@capacitor/preferences';
 import {Capacitor} from '@capacitor/core';
 
 @Injectable({
@@ -148,12 +148,12 @@ export class PhotoService {
   }
 
   private async retrievePhotoURIs(): Promise<void> {
-    const uris = await Storage.get({key: this.storageKey});
+    const uris = await Preferences.get({key: this.storageKey});
     this.photoURIs = JSON.parse(uris.value) || [];
   }
 
   private async persistPhotoURIs(): Promise<void> {
-    await Storage.set({
+    await Preferences.set({
       key: this.storageKey,
       value: JSON.stringify(this.photoURIs)
     });

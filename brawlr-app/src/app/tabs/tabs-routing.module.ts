@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
+import { AuthGuard, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
+
+const redirectUnauthorizedToAccount = () => redirectUnauthorizedTo(['/tabs/account']);
 
 const routes: Routes = [
   {
@@ -13,11 +16,15 @@ const routes: Routes = [
       },
       {
         path: 'brawl',
-        loadChildren: () => import('../brawl/brawl.module').then(m => m.BrawlPageModule)
+        loadChildren: () => import('../brawl/brawl.module').then(m => m.BrawlPageModule),
+        canActivate: [AuthGuard],
+        data: {authGuardPipe: redirectUnauthorizedToAccount}
       },
       {
         path: 'chat',
-        loadChildren: () => import('../chat/chat.module').then(m => m.ChatPageModule)
+        loadChildren: () => import('../chat/chat.module').then(m => m.ChatPageModule),
+        canActivate: [AuthGuard],
+        data: {authGuardPipe: redirectUnauthorizedToAccount}
       },
       {
         path: '',

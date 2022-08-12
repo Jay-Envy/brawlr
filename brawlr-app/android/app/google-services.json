@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "249636605509",
+    "project_id": "brawlr-app-1",
+    "storage_bucket": "brawlr-app-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249636605509:android:5fbc558f54560d7c869d2c",
+        "android_client_info": {
+          "package_name": "com.brawlrapp.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249636605509-92rseq121sajal57j0ps1m6jtu9vd8eq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.brawlrapp.app",
+            "certificate_hash": "be1ad81df09479827ebba3eace85bad3d5009aa6"
+          }
+        },
+        {
+          "client_id": "249636605509-qvg4k9n4jafgnmhkvosnt8df1gferhdl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKO5d4BQ_PUC3LPCkpkuHx3-XoXZpVDcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "249636605509-qvg4k9n4jafgnmhkvosnt8df1gferhdl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
