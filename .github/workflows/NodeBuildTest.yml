@@ -1,0 +1,24 @@
+name: Node Build en test
+
+on: 
+  push:
+    branches: [main]
+    
+jobs: 
+  test_pull_request:
+    runs-on: ${{matrix.os}}
+    
+    strategy: 
+      matrix: 
+        node-version: [16.x]
+        os: [ubuntu-latest, windows-latest]
+    
+    steps: 
+      - uses: actions/checkout@v3
+      - name: use Node.js ${{matrix.node-version}}
+        uses: actions/setup-node@v1
+        with: 
+          node-version: ${{matrix.node-version}}
+      - run: npm ci //clean install
+      - run: npm test
+      - run: npm run build
