@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Brawl
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Brawl</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-card *ngFor="let u of userService.userList" [user]="u">
+  </app-card>
+
+</ion-content>

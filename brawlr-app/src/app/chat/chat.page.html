@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Chat
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Chat</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list lines='full'>
+    <ion-item-sliding *ngFor='let user of userService.userChatList'>
+  
+      <ion-item-options side='end'>
+        <ion-item-option color='danger' (click)='userService.removeUserFromChats(user.id)'>
+          <ion-icon slot="icon-only" name='trash'></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+  
+      <ion-item (click)="router.navigate(['privatemessage', user.id], {relativeTo: activatedRoute})">
+        <img class="chat-img" src="{{user.pic}}"/>
+        <ion-label>
+          {{user.name}}
+        </ion-label>
+      </ion-item>
+  
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,27 @@
+<ion-card>
+  <img src='{{user.pic}}' />
+  <ion-card-header>
+    <ion-card-subtitle>{{user.dicipline}}</ion-card-subtitle>
+    <ion-card-title>{{user.name}}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    {{user.bio}}
+  </ion-card-content>
+    <ion-row>
+      <ion-col>
+        <ion-fab-button>
+          <ion-icon name="thumbs-down"
+            (click)="userService.removeUserFromBrawl(user.id)"></ion-icon>
+        </ion-fab-button>
+      </ion-col>
+      <ion-col></ion-col>
+      <ion-col></ion-col>
+      <ion-col></ion-col>
+      <ion-col>
+        <ion-fab-button>
+          <ion-icon name="thumbs-up"
+            (click)="userService.checkIfUserWantsToFight(user.id)"></ion-icon>
+        </ion-fab-button>
+      </ion-col>
+    </ion-row>
+</ion-card>
